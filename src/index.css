@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  background: #f5f4f0;
+  font-family: "DM Sans", sans-serif;
+}
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes lineGrow {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #0d0d0d;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav-link:hover {
+  color: #1a1aff;
+}
+
+.nav-cta {
+  background: #0d0d0d;
+  color: #fff !important;
+  padding: 0.55rem 1.4rem;
+  border-radius: 100px;
+  transition: background 0.2s !important;
+}
+.nav-cta:hover {
+  background: #1a1aff !important;
+}
+
+.btn-primary {
+  background: #0d0d0d;
+  color: #fff;
+  padding: 0.85rem 2rem;
+  border-radius: 100px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+.btn-primary:hover {
+  background: #1a1aff;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 1.5px solid #0d0d0d;
+  color: #0d0d0d;
+  padding: 0.85rem 2rem;
+  border-radius: 100px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition:
+    border-color 0.2s,
+    color 0.2s,
+    transform 0.2s;
+}
+.btn-outline:hover {
+  border-color: #1a1aff;
+  color: #1a1aff;
+  transform: translateY(-2px);
+}
+
+.btn-white {
+  background: #fff;
+  color: #0d0d0d;
+  padding: 1rem 2.5rem;
+  border-radius: 100px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    transform 0.2s;
+}
+.btn-white:hover {
+  background: #1a1aff;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #888;
+  font-size: 0.85rem;
+  transition: color 0.2s;
+}
+.footer-link:hover {
+  color: #0d0d0d;
+}
